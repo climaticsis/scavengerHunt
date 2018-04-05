@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1,
+        width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        <meta name="format-detection" content="telephone=no" /> 
+        <meta name="msapplication-tap-highlight" content="no" />
+       
+        <title> Scavenger Hunt </title>
+        
+        <link rel="stylesheet" href="css/kendo.mobile.common.min.css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        
+        <section data-role="layout" data-id="homeLay">
+            <header data-role="header">
+                        <h2>Campus
+                        <br>
+                        Scavenger Hunt</h2>
+            </header> 
+        </section>
+        
+        <section data-role="layout" data-id="default">
+            <header data-role="header">
+                        <h2>Campus 
+                        <br>
+                        Scavenger Hunt</h2>
+            </header> 
+            
+            <footer data-role="footer">
+                <div data-role="tabstrip">
+                    <a data-icon="history" href="#home" data-transition="slide:right" >Return</a>
+                </div>
+            </footer>
+        </section>
+        
+        
+        <!--home -->
+        
+        <div id="home" data-role="view" data-layout="homeLay">
+            <div>
+                <p> Race against your classmates, first one to take a picture of every item on this list and verify with the professor wins!</p>
+            
+            </div>
+            <div id="listItems">
+                
+                <button data-transition="slide" data-role="button" href="#pronghorns" class="button" id="1">Pronghorn</button>
+                <br>
+                <br>
+                <button data-transition="slide:left" data-role="button" href="#buffalos" class="button" id="2">Buffalo</button>
+                <br>
+                <br>
+                <button data-transition="slide:left" data-role="button" href="#murals" class="button" id="3">Mural</button>
+                <br>
+                <br>
+                <button data-transition="slide:left" data-role="button" href="#eBlocks" class="button" id="4">'E'</button>
+                <br>
+                <br>
+                <button data-transition="slide:left" data-role="button" href="#luxies" class="button" id="5">Luxie</button>
+                
+            </div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            
+            <div id="done"> 
+                <button data-role="button" href="#donePage" class="button" id="doneBtn">Done!</button>
+            </div>
+        </div>
+
+         <!--Pronghorn -->   
+            
+        <div id="pronghorns" data-role="view" data-layout="default">
+            <div id="prong">
+                <p>Take a picture in front of the Pronghorn Statue
+                <br> 
+                <br>
+                <button data-role="button" data-icon="camera" id="pronghorn" class="button"></button>
+                </p>
+                </div>
+            </div>    
+            
+        <!--Buffalo -->
+        
+        <div id="buffalos" data-role="view" data-layout="default">
+            <div id="buff">
+                <p>Take a picture of the Buffalo Statue
+                    <br>
+                    <br>                    
+                    <button data-role="button" data-icon="camera" id="buffalo" class="button"></button>
+                </p>
+            </div> 
+        </div>
+            
+        <!--Mural -->
+    
+        <div id="murals" data-role="view" data-layout="default">        
+            <div id="mur">
+                <p>Find a mural on campus and take a picture of it
+                <br>
+                <br>                    
+                    <button data-role="button" data-icon="camera" id="mural" class="button"></button>
+                 </p>
+            </div>
+        </div>
+             
+        <!--E Block -->
+        
+        <div id="eBlocks" data-role="view" data-layout="default">
+                <div id="eB">
+                    <p>Take a picture of the E Block sign
+                    <br>
+                    <br>
+                    <button data-role="button" data-icon="camera" id="eBlock" class="button"></button>
+                    </p>
+                </div>
+            </div>
+             
+        <!--Luxie -->
+        
+        <div id="luxies" data-role="view" data-layout="default">
+                <div id="lux">
+                    <p>Find Luxie and take a picture
+                    <br>
+                    <br>
+                    <button data-role="button" data-icon="camera" id="luxie" class="button"></button>
+                    </p>
+                </div> 
+            </div>
+        
+        <!--Done -->
+        
+        <div id="donePage" data-role="view" data-layout="default">
+            <div id="congrats">
+                <h3>Congrats!</h3>
+                <p>You found all the items! Compare how you did with your classmates and see who got the best shots!</p>
+                
+            </div> 
+        </div>
+        
+        
+        <script type="text/javascript" src="js/jquery.min.js"></script>
+        <script type="text/javascript" src="js/kendo.ui.core.min.js"></script>
+            <script> var app = new kendo.mobile.Application();</script>
+        <script src="js/scripts.js"></script>
+        <script type="text/javascript" src="cordova.js"></script>
+        
+    </body>
+    
+</html>
+

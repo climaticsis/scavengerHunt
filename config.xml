@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.phonegap.helloworld" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+    <name>Scavenger Hunt</name>
+    <description>
+        Scavenger Hunt for first years at the U of L.
+    </description>
+    <author email="support@phonegap.com" href="http://phonegap.com">
+        Caitlyn Stewart
+    </author>
+    <content src="index.html" />
+    <platform name="android">
+        <img src="www/res/icon/home-icon.png"></img>
+    </platform>
+    <plugin name="cordova-plugin-camera"/>
+    <access origin="*" />
+</widget>
